@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Цитати авторів</title>
+</head>
+<body>
+    <h2>Про Батьківщину та патріотизм. Про рідну мову, українську пісню.</h2>
+    <table>
+        <tr>
+            <td><button onclick="showQuote('М. Шумило')">М. Шумило</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="showQuote('Ч. Айтматов')">Ч. Айтматов</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="showQuote('П. Гольбах')">П. Гольбах</button></td>
+        </tr>
+        
+        <tr>
+            <td><button onclick="showQuote('Т. Шевченко')">Т. Шевченко</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="showQuote('Д. Павличко')">Д. Павличко</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function showQuote(author) {
+            var quote;
+            if (author === 'М. Шумило') {
+                quote = 'Мова — це глибина тисячоліть.';
+            } else if (author === 'Ч. Айтматов') {
+                quote = 'Той, хто в біді кидає свій народ, стає його ворогом.';
+            } else if (author === 'П. Гольбах') {
+                quote = 'Де немає свободи, там немає і вітчизни.';
+            } else if (author === 'Т. Шевченко') {
+                quote = 'В своїй хаті своя й правда, І сила, і воля..';
+            }   else if (author === 'Д. Павличко') {
+                quote = 'Вітчизна — ось і альфа, і омега!';
+            }   else {
+                quote = 'Цитата для даного автора відсутня.';
+            }
+
+            alert(quote);
+        }
+    </script>
+</body>
+</html>
